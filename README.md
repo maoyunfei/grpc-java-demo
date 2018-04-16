@@ -2,11 +2,11 @@
 
 本项目是一个使用gRPC的Java实例项目。
 
-下面将一步步介绍本项目的构建过程，以详解对gRPC的使用方法。
+下面将一步步介绍本项目的构建过程，以详解对`gRPC`的使用方法。
 
 ## 第一步：定义服务
 
-新建模块grpc-java-proto用于服务定义。
+新建模块`grpc-java-proto`用于服务定义。
 
 在模块的pom.xml中添加需要的依赖。
 
@@ -62,7 +62,7 @@
 </build>
 ```
 
-gRPC协议使用的数据传输格式是[protocol buffers](https://developers.google.com/protocol-buffers/docs/overview)。
+`gRPC`协议使用的数据传输格式是[protocol buffers](https://developers.google.com/protocol-buffers/docs/overview)。
 
 在`src/main`下面建立`proto`目录，`protobuf-maven-plugin`默认会扫描该目录以生成java文件。
 
@@ -123,4 +123,4 @@ gRPC协议使用的数据传输格式是[protocol buffers](https://developers.go
 
 ## 第二步、写客户端
 
-新建`grpc-java-client`模块
+新建`grpc-java-client`模块，提供`gRPC`客户端来调用服务。
