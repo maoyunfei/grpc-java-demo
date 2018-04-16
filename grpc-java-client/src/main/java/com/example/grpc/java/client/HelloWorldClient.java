@@ -45,7 +45,7 @@ public class HelloWorldClient {
         try {
             response = blockingStub.sayHello(request);
         } catch (StatusRuntimeException e) {
-            logger.warn("RPC failed: {0}", e.getStatus());
+            logger.warn("RPC failed: {}", e.getStatus());
             return;
         }
         logger.info("Greeting: " + response.getMessage());
